@@ -6,10 +6,13 @@ agents:
       agents:
         - agent: lc-planner
         - agent: lc-linter
+        - agent: lc-tester
   lc-planner:
     portable: agents/lc-planner.md
   lc-linter:
     portable: agents/lc-linter.md
+  lc-tester:
+    portable: agents/lc-tester.md
   lc-greeter:
     portable: agents/lc-greeter.md
     dependencies:
