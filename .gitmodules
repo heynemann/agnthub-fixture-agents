@@ -1,0 +1,3 @@
+[submodule "vendor/evil-submodule"]
+	path = vendor/evil-submodule
+	url = https://github.com/heynemann/agnthub-fixture-agents.git
