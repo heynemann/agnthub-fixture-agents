@@ -1,0 +1,9 @@
+schemaVersion: 1
+agents:
+  linter:
+    portable: agents/linter.md
+    dependencies:
+      agents:
+        - agent: style-guide
+  style-guide:
+    portable: agents/style-guide.md
