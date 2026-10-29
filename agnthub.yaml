@@ -1,0 +1,46 @@
+schemaVersion: 1
+agents:
+  greeter:
+    portable: agents/greeter.md
+    dependencies:
+      skills:
+        - source: heynemann/agnthub-fixture-skills#v1
+          skill: fixture-greeter
+          minVersion: "1.0.0"
+          maxVersion: "1.9.9"
+  reviewer:
+    portable: agents/reviewer.md
+    dependencies:
+      agents:
+        - agent: greeter
+      skills:
+        - source: heynemann/agnthub-fixture-skills#v1
+          skill: fixture-unversioned
+  greeter-next:
+    portable: agents/greeter-next.md
+    dependencies:
+      skills:
+        - source: heynemann/agnthub-fixture-skills#v1
+          skill: fixture-greeter
+          minVersion: "2.0.0"
+  unversioned:
+    portable: agents/unversioned.md
+    dependencies:
+      skills:
+        - source: heynemann/agnthub-fixture-skills#v1
+          skill: fixture-unversioned
+          minVersion: "1.0.0"
+  loose:
+    portable: agents/loose.md
+    dependencies:
+      skills:
+        - source: heynemann/agnthub-fixture-skills#v1
+          skill: fixture-loose
+          minVersion: "1.0.0"
+  preview:
+    portable: agents/preview.md
+    dependencies:
+      skills:
+        - source: heynemann/agnthub-fixture-skills#v1
+          skill: fixture-preview
+          minVersion: "2.0.0-rc.1"
