@@ -2,4 +2,4 @@
 name: lc-planner
 description: Lifecycle fixture planner
 ---
-Plan the work in small steps.
+Plan the work in small, verifiable steps. Revision two.

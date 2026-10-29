@@ -5,6 +5,7 @@ agents:
     dependencies:
       agents:
         - agent: lc-planner
+        - agent: lc-linter
   lc-planner:
     portable: agents/lc-planner.md
   lc-linter:
