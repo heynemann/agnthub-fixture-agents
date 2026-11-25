@@ -4,7 +4,7 @@ agents:
     portable: agents/greeter.md
     dependencies:
       skills:
-        - source: heynemann/agnthub-fixture-skills#v1
+        - source: https://git.registry.qa.hep.dev/github.com/heynemann/agnthub-fixture-skills.git#v1
           skill: fixture-greeter
           minVersion: "1.0.0"
           maxVersion: "1.9.9"
