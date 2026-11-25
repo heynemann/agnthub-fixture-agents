@@ -1,3 +1,5 @@
-# agnthub fixture: skill dependencies
+# agnthub fixture: one skill dependency
 
-Agents declaring Skill Dependencies on heynemann/agnthub-fixture-skills#v1, including deliberately unsatisfiable bounds (greeter-next, unversioned, loose).
+One agent, `greeter`, requiring the skill `fixture-greeter` (1.0.0 to 1.9.9) from
+heynemann/agnthub-fixture-skills#v1. hep-cli's Registry install uses it to prove an agent's
+skill dependency installs through the pinned skills CLI.
